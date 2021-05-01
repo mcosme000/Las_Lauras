@@ -1,0 +1,31 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  video {
+    height: 100vh;
+  }
+}
+
+.overlay {
+  padding: $space/2;
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  h1 {
+    color: $white;
+  }
+
+  .social a {
+    margin: 0 $space/2;
+    font-size: 3rem;
+    color: #444;
+    &:hover {
+      color: pink;
+      cursor: pointer;
+    }
+  }
+}
