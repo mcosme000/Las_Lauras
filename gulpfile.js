@@ -1,5 +1,6 @@
 const { series, src, dest, watch } = require("gulp");
 const sass = require("gulp-sass");
+const GulpClient = require("gulp");
 
 //compile sass function:
 function css() {
@@ -21,3 +22,5 @@ function watchFiles() {
 exports.css = css;
 
 exports.default = watchFiles;
+
+gulp.task("default", "css");
