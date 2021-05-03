@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -9,6 +10,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: $primaryFont;
 }
 
 .container {
@@ -40,4 +42,8 @@ p {
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }

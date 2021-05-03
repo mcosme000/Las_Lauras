@@ -1,7 +1,7 @@
 .header {
-  padding: $space/2.5 0;
+  padding: $space/3 0;
   width: 100%;
-  background: pink;
+  background: $white;
   .header-content {
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,15 @@
   }
 
   h1 {
-    color: $white;
+    color: $black;
+    font-weight: $semibold;
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    a {
+      margin-left: 2rem;
+      color: $black;
+    }
   }
 }

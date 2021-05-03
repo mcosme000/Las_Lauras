@@ -1,0 +1,23 @@
+.about {
+  padding: $space 0;
+
+  h3 {
+    margin-bottom: $space;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  //to add space between paragraphs
+  .br {
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
