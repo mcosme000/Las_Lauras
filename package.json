@@ -26,5 +26,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-connect": "^5.7.0",
+    "gulp-open": "^3.0.1"
   }
 }

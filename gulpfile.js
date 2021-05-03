@@ -1,9 +1,8 @@
 const { series, src, dest, watch } = require("gulp");
 const sass = require("gulp-sass");
-const GulpClient = require("gulp");
 
 //compile sass function:
-function css() {
+function build() {
   //looking for the scss file
   return (
     src("src/app.scss")
@@ -16,11 +15,9 @@ function css() {
 
 //watchfiles function
 function watchFiles() {
-  watch("src/**/*.scss", css);
+  watch("src/**/*.scss", build);
 }
 
-exports.css = css;
+exports.css = build;
 
-exports.default = watchFiles;
-
-gulp.task("default", "css");
+exports.default = series(watchFiles);
