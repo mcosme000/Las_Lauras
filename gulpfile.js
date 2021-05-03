@@ -18,6 +18,6 @@ function watchFiles() {
   watch("src/**/*.scss", build);
 }
 
-exports.css = build;
+exports.build = build;
 
 exports.default = series(watchFiles);
