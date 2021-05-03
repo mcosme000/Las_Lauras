@@ -1,7 +1,7 @@
 .about {
   padding: $space 0;
 
-  h3 {
+  h2 {
     margin-bottom: $space;
   }
 
@@ -18,7 +18,22 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 2rem;
-  align-items: center;
+  .about-text {
+    grid-row: 1/2;
+    align-self: center;
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    .about-text {
+      grid-column: 2/3;
+    }
+    .about-image {
+      padding-right: 4rem;
+    }
+  }
 }

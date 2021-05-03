@@ -37,7 +37,7 @@ h3 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 a {
@@ -46,4 +46,8 @@ a {
 
 img {
   width: 100%;
+}
+
+.selected {
+  font-weight: $bold;
 }

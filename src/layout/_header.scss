@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   height: 100vh;
-  background: grey;
 
   .header-content {
     width: 100%;
@@ -15,9 +14,11 @@
   padding: 2rem 0;
 
   .nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     h1 {
       color: $black;
@@ -27,7 +28,7 @@
 
     .nav-links {
       a {
-        margin-left: 2rem;
+        margin-right: 2rem;
         color: $black;
       }
     }
@@ -42,7 +43,6 @@
   border-top: none;
 
   .video-content {
-    background: yellow;
     width: 100%;
     height: 100%;
 
@@ -62,17 +62,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  z-index: 1;
+  @include tablet {
+    bottom: -25px;
+  }
   .social {
     justify-content: center;
     display: flex;
     a {
-      margin: 0 $space/2;
-      font-size: 3rem;
-      color: #444;
-      &:hover {
-        color: pink;
-        cursor: pointer;
+      font-size: 2.5rem;
+      margin: 0 1.5rem;
+      @include tablet {
+        margin: 0 $space/2;
       }
     }
 
@@ -80,10 +81,14 @@
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
-      background: $black;
+      background: #444;
       display: flex;
       align-items: center;
       justify-content: center;
+      &:hover {
+        cursor: pointer;
+        background: $purple;
+      }
     }
 
     i {
