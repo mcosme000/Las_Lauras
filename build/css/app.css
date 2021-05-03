@@ -39,46 +39,54 @@ img {
   width: 100%; }
 
 .header {
-  padding: 1.66667rem 0;
   width: 100%;
-  background: #fff; }
+  height: 100vh;
+  background: grey; }
   .header .header-content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; }
+
+.nav {
+  background: white;
+  padding: 2rem 0; }
+  .nav .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .header h1 {
-    color: #000;
-    font-weight: 600;
-    text-transform: uppercase; }
-  .header .navbar a {
-    margin-left: 2rem;
-    color: #000; }
+    .nav .nav-content h1 {
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .nav .nav-content .nav-links a {
+      margin-left: 2rem;
+      color: #000; }
 
 .video {
-  background: blue;
-  width: 100%;
-  position: relative;
-  overflow: hidden; }
-  .video video {
-    top: -30px;
-    min-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    overflow: hidden; }
-
-.overlay {
   width: 100%;
   height: 100%;
+  position: relative;
+  border: 10px solid white;
+  border-top: none; }
+  .video .video-content {
+    background: yellow;
+    width: 100%;
+    height: 100%; }
+    .video .video-content video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden; }
+
+.overlay {
   position: absolute;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .overlay h1 {
-    color: #fff; }
+  justify-content: space-around; }
   .overlay .social {
-    padding: 2.5rem;
+    justify-content: center;
     display: flex; }
     .overlay .social a {
       margin: 0 2.5rem;
@@ -111,4 +119,25 @@ img {
 .about-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; }
+  gap: 2rem;
+  align-items: center; }
+
+.news {
+  padding: 5rem 0;
+  background: #b24b8a;
+  color: #fff; }
+
+footer {
+  padding: 1.66667rem 0;
+  width: 100%;
+  background: #727272; }
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+  .footer-content .contact,
+  .footer-content .copyright {
+    padding: 2.5rem 0; }
+  .footer-content .contact {
+    border-right: 1px solid white; }

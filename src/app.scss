@@ -2,8 +2,11 @@
 
 @import "./base/variables";
 @import "./base/globalstyles";
+@import "./base/mixin";
 
 //layout sheets
 @import "./layout/header";
-@import "./layout/video";
 @import "./layout/about";
+
+@import "./layout/news";
+@import "./layout/footer";

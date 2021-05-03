@@ -1,23 +1,93 @@
 .header {
-  padding: $space/3 0;
   width: 100%;
-  background: $white;
+  height: 100vh;
+  background: grey;
+
   .header-content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.nav {
+  background: white;
+  padding: 2rem 0;
+
+  .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  h1 {
-    color: $black;
-    font-weight: $semibold;
-    text-transform: uppercase;
-  }
-
-  .navbar {
-    a {
-      margin-left: 2rem;
+    h1 {
       color: $black;
+      font-weight: $semibold;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      a {
+        margin-left: 2rem;
+        color: $black;
+      }
+    }
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 10px solid white;
+  border-top: none;
+
+  .video-content {
+    background: yellow;
+    width: 100%;
+    height: 100%;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .social {
+    justify-content: center;
+    display: flex;
+    a {
+      margin: 0 $space/2;
+      font-size: 3rem;
+      color: #444;
+      &:hover {
+        color: pink;
+        cursor: pointer;
+      }
+    }
+
+    .icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    i {
+      color: $white;
     }
   }
 }

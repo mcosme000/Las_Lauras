@@ -1,0 +1,20 @@
+footer {
+  padding: $space / 3 0;
+  width: 100%;
+  background: rgb(114, 114, 114);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  .contact,
+  .copyright {
+    padding: $space / 2 0;
+  }
+
+  .contact {
+    border-right: 1px solid white;
+  }
+}
