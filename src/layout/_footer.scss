@@ -1,20 +1,53 @@
 footer {
-  padding: $space / 3 0;
+  padding: $space / 4 0;
   width: 100%;
-  background: rgb(114, 114, 114);
+  background: #444;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 3rem;
+    align-items: center;
+  }
 
   .contact,
   .copyright {
     padding: $space / 2 0;
   }
+}
 
-  .contact {
-    border-right: 1px solid white;
+.contact {
+  li {
+    margin-bottom: 1rem;
+  }
+  i {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+.social {
+  max-width: 30rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 3rem;
+    &:hover.youtube {
+      color: $youtube;
+    }
+    &:hover.facebook {
+      color: $facebook;
+    }
+    &:hover.instagram {
+      color: $instagram;
+    }
+    &:hover.spotify {
+      color: $spotify;
+    }
   }
 }
