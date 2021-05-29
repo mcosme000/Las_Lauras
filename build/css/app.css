@@ -34,7 +34,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: var(--black); }
 
 li {
   list-style: none; }
@@ -43,7 +43,8 @@ img {
   width: 100%; }
 
 .selected {
-  font-weight: 700; }
+  font-weight: 700;
+  color: #b24b8a; }
 
 .header {
   width: 100%;
@@ -73,8 +74,7 @@ img {
     font-weight: 600;
     text-transform: uppercase; }
   .nav .nav-content .nav-links a {
-    margin-right: 2rem;
-    color: #000; }
+    margin-right: 2rem; }
 
 .video {
   width: 100%;
@@ -152,6 +152,16 @@ img {
         grid-column: 2/3; }
       .about-content .about-image {
         padding-right: 4rem; } }
+
+.music {
+  padding: 2rem 0; }
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; }
+  .album-container .top {
+    display: flex; }
 
 .news {
   padding: 5rem 0;

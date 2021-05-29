@@ -1,0 +1,12 @@
+.music {
+  padding: 2rem 0;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  .top {
+    display: flex;
+  }
+}
