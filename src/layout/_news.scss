@@ -2,4 +2,27 @@
   padding: $space 0;
   background: $purple;
   color: $white;
+  .news-container {
+    margin-top: 2rem;
+  }
+}
+
+.iframe-container {
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.date {
+  font-size: 1.5rem;
+  font-style: italic;
 }

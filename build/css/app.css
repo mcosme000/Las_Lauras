@@ -153,25 +153,67 @@ img {
       .about-content .about-image {
         padding-right: 4rem; } }
 
-.music {
+.music section {
   padding: 2rem 0; }
 
+.music .section-color {
+  background: #b24b8a; }
+
 .album-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 2rem 0;
   display: flex;
-  flex-direction: column;
-  border: 1px solid black; }
-  .album-container .top {
-    display: flex; }
+  flex-direction: column; }
+
+.top .album-img-container {
+  max-width: 200px; }
+  .top .album-img-container .album-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+@media (min-width: 768px) {
+  .top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+.tracks {
+  margin-top: 2rem; }
+  .tracks li {
+    padding: 1rem 0;
+    border-bottom: 1px solid grey; }
+    .tracks li:hover {
+      background: lightgrey; }
 
 .news {
   padding: 5rem 0;
   background: #b24b8a;
   color: #fff; }
+  .news .news-container {
+    margin-top: 2rem; }
+
+.iframe-container {
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0; }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.date {
+  font-size: 1.5rem;
+  font-style: italic; }
 
 footer {
   padding: 1.25rem 0;
   width: 100%;
-  background: #acacac; }
+  background: #eeeeee; }
 
 @media (min-width: 768px) {
   .footer-content {
