@@ -8,7 +8,6 @@
 }
 
 .album-container {
-  margin: 2rem auto;
   max-width: 800px;
   padding: 2rem 0;
   display: flex;
@@ -27,7 +26,12 @@
 
   @include tablet {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    .description {
+      margin-left: 1rem;
+      grid-column: 2/4;
+    }
   }
 }
 

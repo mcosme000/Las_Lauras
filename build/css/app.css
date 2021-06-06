@@ -46,6 +46,12 @@ img {
   font-weight: 700;
   color: #b24b8a; }
 
+.subtitle {
+  padding: 1rem 0; }
+
+.section {
+  padding: 2rem 0; }
+
 .header {
   width: 100%;
   height: auto; }
@@ -128,8 +134,6 @@ img {
 
 .about {
   padding: 5rem 0; }
-  .about h2 {
-    margin-bottom: 5rem; }
   .about p {
     line-height: 1.5; }
   .about .br {
@@ -160,7 +164,6 @@ img {
   background: #b24b8a; }
 
 .album-container {
-  margin: 2rem auto;
   max-width: 800px;
   padding: 2rem 0;
   display: flex;
@@ -176,7 +179,11 @@ img {
 @media (min-width: 768px) {
   .top {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; }
+    .top .description {
+      margin-left: 1rem;
+      grid-column: 2/4; } }
 
 .tracks {
   margin-top: 2rem; }
@@ -186,12 +193,21 @@ img {
     .tracks li:hover {
       background: lightgrey; }
 
+.contact {
+  padding: 2rem 0; }
+
+form {
+  margin-top: 1rem;
+  max-width: 800px;
+  border: 1px solid black; }
+
+input {
+  padding: 1rem; }
+
 .news {
   padding: 5rem 0;
   background: #b24b8a;
   color: #fff; }
-  .news .news-container {
-    margin-top: 2rem; }
 
 .iframe-container {
   margin: 1rem 0;
@@ -215,16 +231,19 @@ footer {
   width: 100%;
   background: #eeeeee; }
 
-@media (min-width: 768px) {
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 3rem;
-    align-items: center; } }
+.footer-content {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 3rem; }
+      .footer-content .copyright {
+        text-align: right; } }
 
-.footer-content .contact,
-.footer-content .copyright {
+.contact,
+.copyright {
   padding: 2.5rem 0; }
 
 .contact li {
@@ -235,8 +254,6 @@ footer {
   margin-right: 1rem; }
 
 .social {
-  max-width: 30rem;
-  align-self: center;
   display: flex;
   justify-content: space-between;
   align-items: center; }
