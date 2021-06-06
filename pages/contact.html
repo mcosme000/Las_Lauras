@@ -29,23 +29,8 @@
     </header>
 
     <main class="section container">
-      <h2 class="subtitle">Contáctanos</h2>
-      <p>¿Hay algo que quieras hacernos saber? ¡Te leemos!</p>
-      <form>
-        <label for="name">Nombre</label>
-        <input class="name" />
-        <br />
-        <label for="email">Email</label>
-        <input class="email" />
-        <br />
-        <label for="mensaje">Tu mensaje: </label>
-        <textarea class="mensaje"></textarea>
-        <input type="submit" value="Enviar" class="form-btn" />
-      </form>
-    </main>
-
-    <footer>
-      <div class="footer-content container">
+      <section class="contact-section">
+        <h2 class="subtitle">Contáctanos</h2>
         <div class="contact">
           <ul>
             <li><i class="far fa-envelope"></i>laslauras.leon@gmail.com</li>
@@ -53,6 +38,33 @@
             <li><i class="fas fa-phone-alt"></i>660-602-602</li>
           </ul>
         </div>
+      </section>
+
+      <section class="contact-section">
+        <p>¿Hay algo que quieras hacernos saber? ¡Te leemos!</p>
+        <form class="contact-form">
+          <div>
+            <label for="name">Nombre</label>
+            <input class="name" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input class="email" id="email" />
+          </div>
+          <label for="mensaje">Tu mensaje:</label>
+          <textarea
+            placeholder="Escribe aquí tu mensaje"
+            cols="30"
+            rows="5"
+            class="mensaje"
+          ></textarea>
+          <input type="submit" value="Enviar" class="form-btn" id="submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content container">
         <div class="social">
           <a
             href="https://www.youtube.com/channel/UCAoJJRAKPpBNGzhUtPrdlFQ"
@@ -84,7 +96,7 @@
           </a>
         </div>
         <div class="copyright">
-          <h4>Copyright: Las Lauras</h4>
+          <h4>© Las Lauras 2021</h4>
         </div>
       </div>
     </footer>
