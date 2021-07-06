@@ -1,2 +1,0 @@
-command = "gulp build"
-publish = "dist"

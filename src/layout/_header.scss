@@ -23,10 +23,12 @@
   z-index: 3;
 
   .nav-content {
-    @include tablet {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    @media (min-width: 768px) {
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
 
     h1 {
