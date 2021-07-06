@@ -17,11 +17,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3 {
@@ -57,6 +52,21 @@ img {
   width: 100%;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.center {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .selected {
   font-weight: 700;
   color: #b24b8a;
@@ -65,10 +75,6 @@ img {
 .subtitle {
   padding: 1rem 0;
   font-family: "Abril Fatface", cursive;
-}
-
-.section {
-  padding: 2rem 0;
 }
 
 .header {
@@ -404,6 +410,41 @@ input#submit {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*- - - - - - - 
+OVERLAY STYLES 
+- - - - - - - */
+.gallery-overlay {
+  display: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(253, 253, 253, 0.507);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wide-img {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .wide-img {
+    width: 70%;
+  }
 }
 
 .news {

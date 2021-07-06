@@ -13,11 +13,6 @@ body {
   font-family: $primaryFont;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3 {
@@ -51,18 +46,4 @@ li {
 
 img {
   width: 100%;
-}
-
-.selected {
-  font-weight: $bold;
-  color: #b24b8a;
-}
-
-.subtitle {
-  padding: 1rem 0;
-  font-family: $secondaryFont;
-}
-
-.section {
-  padding: 2rem 0;
 }
