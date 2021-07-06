@@ -9,7 +9,7 @@ function creategallery() {
   for (let i = 1; i <= 9; i++) {
     const container = document.createElement("div");
     const image = document.createElement("img");
-    image.src = `/media/laslauras-gallery/small/${i}_small-min.jpg`;
+    image.src = `/media/laslauras-gallery/small/${i}_thumb.png`;
     image.id = i;
     image.classList.add("gallery-img");
     container.appendChild(image);
@@ -46,4 +46,9 @@ function createOverlay(id) {
   overlay.appendChild(wideimg);
   overlay.appendChild(closeBtn);
   body.appendChild(overlay);
+
+  //close overlay
+  closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+  });
 }
