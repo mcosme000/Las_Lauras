@@ -9,7 +9,7 @@ function creategallery() {
   for (let i = 1; i <= 9; i++) {
     const container = document.createElement("div");
     const image = document.createElement("img");
-    image.src = `/media/laslauras-gallery/small/${i}_thumb.webp`;
+    image.src = `/media/images/thumb/0${i}thumb.jpg`;
     image.id = i;
     image.classList.add("gallery-img");
     container.appendChild(image);
