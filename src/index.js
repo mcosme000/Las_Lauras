@@ -34,16 +34,17 @@ function createOverlay(id) {
   overlay.classList.add("gallery-overlay");
 
   //create img
-  let wideimg = document.createElement("img");
-  wideimg.src = `/media/laslauras-gallery/${id}-min.jpg`;
-  wideimg.classList.add("wide-img");
+  let overlayContainer = document.createElement("div");
+  overlayContainer.classList.add("overlayCont");
+  overlayContainer.innerHTML = `
+  <img src="/media/images/0${id}.jpg" class="wide-img">`;
 
   //create close btn
   let closeBtn = document.createElement("a");
   closeBtn.classList.add("close-btn");
   closeBtn.innerText = "X";
 
-  overlay.appendChild(wideimg);
+  overlay.appendChild(overlayContainer);
   overlay.appendChild(closeBtn);
   body.appendChild(overlay);
 
