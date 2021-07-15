@@ -37,7 +37,7 @@ function createOverlay(id) {
   let overlayContainer = document.createElement("div");
   overlayContainer.classList.add("overlayCont");
   overlayContainer.innerHTML = `
-  <img src="/media/images/0${id}.jpg" class="wide-img">`;
+  <img src="/media/images/0${id}.webp" class="wide-img">`;
 
   //create close btn
   let closeBtn = document.createElement("a");
