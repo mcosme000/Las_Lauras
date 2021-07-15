@@ -23,18 +23,18 @@
   z-index: 3;
 
   .nav-content {
-    @media (min-width: 768px) {
-      .nav-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    h1 {
-      color: $black;
-      font-weight: $semibold;
+    .logo {
+      font-family: $secondaryFont;
       text-transform: uppercase;
+      @include tablet {
+        font-size: 5rem;
+      }
     }
 
     .nav-links {
