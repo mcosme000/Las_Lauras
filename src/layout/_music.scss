@@ -1,10 +1,5 @@
-.music {
-  section {
-    padding: 2rem 0;
-  }
-  .section-color {
-    background: $purple;
-  }
+section {
+  padding: 2rem 0;
 }
 
 .album-container {
@@ -12,18 +7,17 @@
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  .album-title {
-    font-weight: $bold;
-  }
 }
 
 .top {
   .album-img-container {
     max-width: 200px;
+    margin-bottom: 2rem;
     .album-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border: 3px solid black;
     }
   }
 
@@ -31,20 +25,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    .description {
-      margin-left: 1rem;
+    .album-title {
+      font-weight: $bold;
+      margin-bottom: 2rem;
       grid-column: 2/4;
     }
   }
 }
 
 .tracks {
+  width: 100%;
+  max-width: 500px;
   margin-top: 2rem;
   li {
     padding: 1rem 0;
     border-bottom: 1px solid grey;
     &:hover {
-      background: lightgrey;
+      background: lightyellow;
     }
   }
 }

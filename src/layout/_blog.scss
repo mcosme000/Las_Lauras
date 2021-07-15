@@ -1,0 +1,27 @@
+.blog-container {
+  margin-bottom: 3rem;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-img {
+    height: 400px;
+    width: 100%;
+  }
+  .blog-content {
+    padding: 2rem;
+  }
+}
+
+.blog-btn {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  &:hover {
+    background: $purple;
+    border-color: $purple;
+    color: white;
+  }
+}

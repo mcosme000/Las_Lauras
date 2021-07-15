@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Las Lauras - Galería</title>
+    <link rel="stylesheet" href="/src/app.css" />
     <script
       src="https://kit.fontawesome.com/8013b0f68f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/src/app.css" />
+    <title>Las Lauras - Blog</title>
   </head>
   <body>
     <header class="header">
@@ -20,8 +20,8 @@
           </a>
           <nav class="nav-links">
             <a href="/pages/music.html">Música</a>
-            <a href="#" class="selected">Galería</a>
-            <a href="/pages/blog.html">Blog</a>
+            <a href="/pages/gallery.html">Galería</a>
+            <a href="#" class="selected">Blog</a>
             <a href="/pages/contact.html">Contacto</a>
           </nav>
         </div>
@@ -29,8 +29,27 @@
     </header>
 
     <main class="section container">
-      <h2 class="subtitle">Galería de fotos</h2>
-      <div class="gallery-container" id="gallery"></div>
+      <h2 class="subtitle">Blog</h2>
+      <div class="blog-container">
+        <div class="blog-img">
+          <img src="/media/images/grupo01.png" alt="" />
+        </div>
+        <div class="blog-content">
+          <h3>Sesiones en el living</h3>
+          <p class="date">Publicado el 20/06/2021</p>
+          <p>Texto texto texto</p>
+          <p>Texto texto texto</p>
+          <a href="#" class="blog-btn">Leer más</a>
+        </div>
+      </div>
+      <div class="blog-container">
+        <div class="blog-img"></div>
+        <div class="blog-content"></div>
+      </div>
+      <div class="blog-container">
+        <div class="blog-img"></div>
+        <div class="blog-content"></div>
+      </div>
     </main>
 
     <footer>
@@ -70,6 +89,5 @@
         </div>
       </div>
     </footer>
-    <script src="/src/index.js"></script>
   </body>
 </html>
