@@ -361,6 +361,10 @@ img {
   border-bottom: 1px solid grey;
 }
 
+.tracks li:hover {
+  background: lightyellow;
+}
+
 .contact {
   padding: 2.5rem 0;
 }
