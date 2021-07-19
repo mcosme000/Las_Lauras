@@ -30,14 +30,11 @@
     }
 
     .logo {
-      font-family: $secondaryFont;
-      text-transform: uppercase;
-      @include tablet {
-        font-size: 5rem;
-      }
+      width: 250px;
     }
 
     .nav-links {
+      margin-top: 2rem;
       a {
         margin-right: 2rem;
       }

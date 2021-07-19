@@ -54,3 +54,10 @@ img {
 .text-detail {
   font-weight: $bold;
 }
+
+/* - - - BTN STYLES - - - */
+
+.btn {
+  @include button($spotify, inline-block) {
+  }
+}
