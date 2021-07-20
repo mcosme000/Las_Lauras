@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Las Lauras - Galería</title>
+    <link rel="stylesheet" href="/src/app.css" />
     <script
       src="https://kit.fontawesome.com/8013b0f68f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/src/app.css" />
+    <title>Las Lauras - Sesiones en el living</title>
   </head>
   <body>
     <header class="header">
@@ -23,17 +23,54 @@
           /></a>
           <nav class="nav-links">
             <a href="/pages/music.html">Música</a>
-            <a href="#" class="selected">Galería</a>
-            <a href="/pages/blog.html">Blog</a>
+            <a href="/pages/gallery.html">Galería</a>
+            <a href="/pages/blog.html" class="selected">Blog</a>
             <a href="/pages/contact.html">Contacto</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="section container">
-      <h2 class="subtitle">Galería de fotos</h2>
-      <div class="gallery-container" id="gallery"></div>
+    <main class="section blog-container">
+      <h2 class="subtitle">Sesiones en el living</h2>
+      <p class="date">Publicado el 20/06/2021</p>
+
+      <img
+        class="blog-img"
+        src="/media/images/Captura de pantalla 2021-07-20 a las 14.12.12.png"
+        alt=""
+      />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quis
+        perspiciatis placeat, eveniet debitis atque. Eaque voluptatem ad
+        deleniti officiis tempora assumenda molestias nisi. Magnam fugiat
+        molestiae architecto eos delectus!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quis
+        perspiciatis placeat, eveniet debitis atque. Eaque voluptatem ad
+        deleniti officiis tempora assumenda molestias nisi. Magnam fugiat
+        molestiae architecto eos delectus!
+      </p>
+      <div class="two-columns">
+        <img
+          class="border blog-img"
+          src="/media/images/Captura de pantalla 2021-07-20 a las 14.11.42.png"
+          alt=""
+        />
+        <img
+          class="border blog-img"
+          src="/media/images/Captura de pantalla 2021-07-20 a las 14.11.50.png"
+          alt=""
+        />
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quis
+        perspiciatis placeat, eveniet debitis atque. Eaque voluptatem ad
+        deleniti officiis tempora assumenda molestias nisi. Magnam fugiat
+        molestiae architecto eos delectus!
+      </p>
+      <a href="/pages/blog.html" class="right-btn">Volver al blog</a>
     </main>
 
     <footer>
@@ -73,7 +110,5 @@
         </div>
       </div>
     </footer>
-    <script src="/src/index.js"></script>
-    <script src="/src/gallery.js"></script>
   </body>
 </html>

@@ -20,16 +20,11 @@
 }
 
 @mixin button($background, $display) {
-  padding: 1rem 2rem;
-  border-radius: 25px;
-  border: 2px solid $background;
   text-align: center;
-  color: $black;
+  border-radius: 3px;
+  background: $background;
+  color: $white;
   font-weight: $bold;
   display: $display;
   @content;
-  &:hover {
-    background: $background;
-    color: $white;
-  }
 }

@@ -1,5 +1,12 @@
 .container {
   width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-container {
+  width: 80%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -13,12 +20,31 @@
   margin: 0 auto;
 }
 
+.two-columns {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* - - - - 
+DECORATIONS
+- - - - - */
 .selected {
   font-weight: $bold;
-  color: #b24b8a;
+  border-bottom: 1px solid black;
 }
 
 .subtitle {
   margin-bottom: 2rem;
   font-family: $secondaryFont;
+}
+
+.subtitle-color {
+  color: $blue;
+}
+
+.border {
+  border: 2px solid black;
 }

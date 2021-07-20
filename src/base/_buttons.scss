@@ -1,0 +1,17 @@
+/* - - - BTN STYLES - - - */
+
+.btn {
+  @include button($spotify, inline-block);
+  padding: 1rem 3rem;
+}
+
+.blog-btn {
+  @include button($darkblue, inline-block);
+  padding: 1rem 10rem;
+}
+
+.right-btn {
+  @include button($darkblue, inline-block);
+  align-self: flex-end;
+  padding: 1rem 10rem;
+}
