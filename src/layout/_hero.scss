@@ -1,0 +1,69 @@
+header {
+  width: 100%;
+  background: $white;
+}
+
+.hero-header {
+  width: 100%;
+
+  @include tablet {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.nav {
+  padding: 2rem 0;
+  width: 100%;
+  position: relative;
+
+  .logo {
+    width: 200px;
+    padding: 1rem 0;
+    @include tablet {
+      width: 300px;
+    }
+  }
+}
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    a {
+      text-transform: uppercase;
+      margin-left: 1rem;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+video {
+  width: 100%;
+  @include tablet {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* MOBILE MENU STYLES */
+.mobile-menu {
+  width: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+  @include tablet {
+    display: none;
+  }
+}
