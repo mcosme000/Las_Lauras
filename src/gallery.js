@@ -45,7 +45,7 @@ function createOverlay(id) {
   //create close btn
   let closeBtn = document.createElement("a");
   closeBtn.classList.add("close-btn");
-  closeBtn.innerText = "X";
+  closeBtn.innerText = "Cerrar";
 
   overlay.appendChild(overlayContainer);
   overlay.appendChild(closeBtn);
@@ -65,5 +65,5 @@ const member = document.querySelector("#members");
 member.addEventListener("click", memberInfo);
 
 function memberInfo(e) {
-  console.log(e.target);
+  console.log(e.target.value);
 }
