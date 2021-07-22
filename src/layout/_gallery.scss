@@ -1,16 +1,16 @@
-.gallery-container {
-  @include tablet {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-  }
+.grid-three {
+  @include grid(3);
+}
+
+.grid-two {
+  @include grid(2);
+  gap: 5rem;
 }
 
 .gallery-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: 3rem;
   @include tablet {
     margin: 0;
   }
@@ -59,4 +59,8 @@ OVERLAY STYLES
   &:hover {
     cursor: pointer;
   }
+}
+
+.background {
+  background: $blue;
 }

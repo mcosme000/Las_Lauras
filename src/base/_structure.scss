@@ -14,13 +14,12 @@
   padding: 3rem 0;
 }
 
-.center {
-  width: 80%;
-  max-width: 900px;
-  margin: 0 auto;
-}
+/* - - - 
+  ALIGN 
+- - - - */
 
 .two-columns {
+  margin: 2rem 0;
   @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -36,15 +35,28 @@ DECORATIONS
   border-bottom: 1px solid black;
 }
 
+.text-space p {
+  margin-bottom: 2rem;
+}
+
 .subtitle {
   margin-bottom: 2rem;
   font-family: $secondaryFont;
 }
 
+.border {
+  border: 2px solid black;
+}
+
+/* - - - 
+  COLORS 
+- - - - */
 .subtitle-color {
   color: $blue;
 }
 
-.border {
-  border: 2px solid black;
+.color-blue {
+  color: $blue;
+  font-style: italic;
+  font-weight: $bold;
 }

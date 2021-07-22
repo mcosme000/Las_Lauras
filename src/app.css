@@ -29,7 +29,13 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 h3 {
@@ -57,12 +63,6 @@ img {
      object-fit: cover;
 }
 
-.text-detail {
-  font-style: italic;
-  font-weight: 700;
-  color: #3a90ac;
-}
-
 .container {
   width: 80%;
   max-width: 1200px;
@@ -79,10 +79,11 @@ img {
   padding: 3rem 0;
 }
 
-.center {
-  width: 80%;
-  max-width: 900px;
-  margin: 0 auto;
+/* - - - 
+  ALIGN 
+- - - - */
+.two-columns {
+  margin: 2rem 0;
 }
 
 @media (min-width: 768px) {
@@ -103,21 +104,35 @@ DECORATIONS
   border-bottom: 1px solid black;
 }
 
+.text-space p {
+  margin-bottom: 2rem;
+}
+
 .subtitle {
   margin-bottom: 2rem;
   font-family: "Abril Fatface", cursive;
-}
-
-.subtitle-color {
-  color: #3a90ac;
 }
 
 .border {
   border: 2px solid black;
 }
 
+/* - - - 
+  COLORS 
+- - - - */
+.subtitle-color {
+  color: #3a90ac;
+}
+
+.color-blue {
+  color: #3a90ac;
+  font-style: italic;
+  font-weight: 700;
+}
+
 /* - - - BTN STYLES - - - */
 .btn {
+  margin: 2rem 0;
   text-align: center;
   border-radius: 3px;
   background: #1db954;
@@ -128,16 +143,18 @@ DECORATIONS
 }
 
 .blog-btn {
+  margin: 2rem 0;
   text-align: center;
   border-radius: 3px;
   background: #1d298a;
   color: #fff;
   font-weight: 700;
   display: inline-block;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 }
 
 .right-btn {
+  margin: 2rem 0;
   text-align: center;
   border-radius: 3px;
   background: #1d298a;
@@ -146,7 +163,7 @@ DECORATIONS
   display: inline-block;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 }
 
 header {
@@ -258,11 +275,6 @@ video {
 
 .about {
   padding: 5rem 0;
-}
-
-.about .br {
-  display: block;
-  margin-top: 2rem;
 }
 
 .about-content {
@@ -393,12 +405,31 @@ video {
   bottom: 0;
 }
 
+.grid-three {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 @media (min-width: 768px) {
-  .gallery-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+  .grid-three {
+    gap: 3rem;
+  }
+}
+
+.grid-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-two {
     gap: 3rem;
   }
 }
@@ -408,7 +439,6 @@ video {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -482,6 +512,10 @@ OVERLAY STYLES
   cursor: pointer;
 }
 
+.background {
+  background: #3a90ac;
+}
+
 .news {
   padding: 5rem 0;
   background: #3a90ac;
@@ -537,19 +571,18 @@ OVERLAY STYLES
 
 @media (min-width: 768px) {
   .blog-card .blog-content {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 3rem;
   }
 }
 
 .blog-img {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 
 .blog-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 footer {

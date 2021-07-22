@@ -1,3 +1,4 @@
+//MEDIA QUERIES
 @mixin phone {
   @media (min-width: $phone) {
     //a partir de 480px se aplica esto:
@@ -19,7 +20,9 @@
   }
 }
 
+// BUTTON
 @mixin button($background, $display) {
+  margin: 2rem 0;
   text-align: center;
   border-radius: 3px;
   background: $background;
@@ -27,4 +30,14 @@
   font-weight: $bold;
   display: $display;
   @content;
+}
+
+// GRID DISPLAY FOR GALLERY
+@mixin grid($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 1rem;
+  @include tablet {
+    gap: 3rem;
+  }
 }

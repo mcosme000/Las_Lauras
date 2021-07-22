@@ -7,11 +7,11 @@
 
 .blog-btn {
   @include button($darkblue, inline-block);
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 }
 
 .right-btn {
   @include button($darkblue, inline-block);
   align-self: flex-end;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
 }

@@ -41,15 +41,15 @@
   }
   .blog-content {
     @include tablet {
-      align-self: center;
+      align-self: flex-start;
       padding: 3rem;
     }
   }
 }
 
 .blog-img {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 .blog-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
