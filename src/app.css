@@ -416,22 +416,78 @@ video {
 @media (min-width: 768px) {
   .grid-three {
     gap: 3rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .grid-two {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  gap: 5rem;
 }
 
 @media (min-width: 768px) {
   .grid-two {
     gap: 3rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.member-img {
+  position: relative;
+}
+
+.member-overlay {
+  padding: 2rem;
+  width: 250px;
+  position: absolute;
+  z-index: 5;
+  background: #3a90ac;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .member-overlay {
+    width: 300px;
+  }
+}
+
+.member-overlay p {
+  word-wrap: break-word;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .member-overlay p {
+    font-size: 1.8rem;
+  }
+}
+
+.member:hover > .member-overlay {
+  display: inline-block;
+}
+
+.member:hover > .member-img {
+  opacity: 0.3;
 }
 
 .gallery-img {

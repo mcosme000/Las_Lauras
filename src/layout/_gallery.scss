@@ -1,10 +1,50 @@
 .grid-three {
-  @include grid(3);
+  @include grid(3, 3);
 }
 
 .grid-two {
-  @include grid(2);
-  gap: 5rem;
+  @include grid(1, 2);
+}
+
+//MEMBER OVERLAY
+
+.member {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.member-img {
+  position: relative;
+}
+
+.member-overlay {
+  padding: 2rem;
+  width: 250px;
+  position: absolute;
+  z-index: 5;
+  background: $blue;
+  display: none;
+
+  @include tablet {
+    width: 300px;
+  }
+  p {
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    color: white;
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.member:hover > .member-overlay {
+  display: inline-block;
+}
+
+.member:hover > .member-img {
+  opacity: 0.3;
 }
 
 .gallery-img {

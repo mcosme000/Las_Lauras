@@ -56,3 +56,14 @@ function createOverlay(id) {
     overlay.style.display = "none";
   });
 }
+
+/* - - - - - - - - - 
+MEMBERS GALLERY CODE
+- - - - - - - - - - */
+
+const member = document.querySelector("#members");
+member.addEventListener("click", memberInfo);
+
+function memberInfo(e) {
+  console.log(e.target);
+}
