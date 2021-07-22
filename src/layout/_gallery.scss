@@ -23,7 +23,7 @@
   width: 250px;
   position: absolute;
   z-index: 5;
-  background: $blue;
+  background: $primary;
   display: none;
 
   @include tablet {
@@ -66,7 +66,7 @@ OVERLAY STYLES
   display: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.507);
+  background: $grey;
   position: fixed;
   top: 0;
   display: flex;
@@ -92,7 +92,7 @@ OVERLAY STYLES
 
 .close-btn {
   padding: 1rem 2rem;
-  background: white;
+  background: $white;
   border: 1px solid black;
   border-radius: 5rem;
   margin-top: 2rem;
@@ -102,5 +102,5 @@ OVERLAY STYLES
 }
 
 .background {
-  background: $blue;
+  background: $primary;
 }

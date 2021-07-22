@@ -6,12 +6,12 @@
 }
 
 .blog-btn {
-  @include button($darkblue, inline-block);
+  @include button($primaryDark, inline-block);
   padding: 1rem 5rem;
 }
 
 .right-btn {
-  @include button($darkblue, inline-block);
+  @include button($primaryDark, inline-block);
   align-self: flex-end;
   padding: 1rem 5rem;
 }
