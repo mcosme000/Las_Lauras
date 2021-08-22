@@ -28,10 +28,6 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
-
 @media (min-width: 768px) {
   h2 {
     font-size: 3.5rem;
@@ -109,6 +105,7 @@ DECORATIONS
 }
 
 .subtitle {
+  font-size: 3rem;
   margin-bottom: 2rem;
   font-family: "Abril Fatface", cursive;
 }
@@ -316,7 +313,7 @@ video {
 
 .album-container {
   max-width: 800px;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
